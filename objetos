@@ -1,0 +1,89 @@
+//OBJETOS
+// let professor = {
+//     nome: 'Vitor', 
+//     idade: 27, 
+//     tarefas: ['dar aula', 'responder duvidas'],
+//     contarPiada: 'blablabla'
+// }
+// -> objetos se declara com CHAVES e valores por ':'
+
+// console.log(professor.idade);
+// console.log(professor['idade']);
+
+//EXERCICIO 1
+// const filme = {
+//     nome: 'Edward Scissorhands',
+//     ano: 1990,
+//     direção: 'Tim Burton',
+//     elenco: ['Johnny Depp', 'Winona Ryder', 'Dianne Wiest'],
+//     assisti: true
+// }
+
+// console.log(filme);
+//-----------------------------------------------
+
+//EXERCICIO 2
+// const pessoa = {
+//     nome: 'Nathaniel',
+//     idade: 16,
+//     generoMusica: 'rock'
+// }
+// console.log(`O nome dessa pessoa é ${pessoa.nome}, ela tem ${pessoa.idade} anos e gosta muito de ${pessoa.generoMusica}.`);
+//-----------------------------------------------
+
+//EXERCICIO 3
+// filme.personagens = ['Edward Scissorhands', 'Kim Boggs', 'Peg Boggs'];
+// console.log(filme.elenco[0], ':', filme.personagens[0]);
+// console.log(filme.elenco[1], ':', filme.personagens[1]);
+// console.log(filme.elenco[2], ':', filme.personagens[2]);
+// filme.elenco[0] = 'Xuxa';
+
+// console.log('-----------------------------------');
+
+// console.log(filme);
+
+//SPREAD
+// const usuario = {
+//     nome: 'ablabla',
+//     idade: 99,
+//     email: 'porra.com',
+//     cidade: 'sao leopoldo'
+// }
+// console.log(usuario);
+
+// -> uso de spread (...[nome do objeto])
+// const novoUsuario = {
+//     ...usuario,
+//     nome: 'Nathaniel',
+//     idade: 16,
+//     email: 'natanoliveira251206@gmail.com'
+// }
+// console.log(novoUsuario);
+// console.log('-----------------------------------');
+
+// const listaDeNomes = ['Bob', 'Bobert', 'Boberto'];
+// console.log(listaDeNomes);
+
+// -> uso do spread (...) para copiar objeto
+// const copiaListaDeNomes = [...listaDeNomes];
+// console.log(copiaListaDeNomes);
+
+//EXERCICIO 4
+function pessoaFunção() {
+    const pessoa = {
+        nome: 'Nathaniel',
+        idade: 16,
+        generoMusica: 'rock'
+    }
+const pessoa2 = {
+    ...pessoa,
+    comidas: ['pizza', 'banana', 'sorvete'],
+    melhorAmigo : {
+        nome: 'Jwu',
+        idade: 16
+    }
+}
+console.log(`O nome da pessoa é ${pessoa.nome} e suas comidas favoritas são ${pessoa2.comidas[0]}, ${pessoa2.comidas[1]} e ${pessoa2.comidas[2]}. Seu melhor amigo se chama ${pessoa2.melhorAmigo.nome} e tem ${pessoa2.melhorAmigo.idade} anos.`);
+}
+
+pessoaFunção();
